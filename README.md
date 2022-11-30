@@ -18,7 +18,7 @@ Team: Pranjali Pathre (2019112002), Samruddhi Shastri (2019111039)
 git clone https://github.com/pranjali-pathre/LAST-Latent-Space-Assisted-Adpative-Sampling.git
 cd LAST
 docker build -t container -f Dockerfile .
-docker run -d -p 1015:8000 container
+docker run -d -p 1016:8000 container
 ```
 ## Setting frontend
 ```bash
