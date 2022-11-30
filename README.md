@@ -15,11 +15,20 @@ Team: Pranjali Pathre (2019112002), Samruddhi Shastri (2019111039)
 
 ## Using Dockerized Container
 ```bash
-git clone https://github.com/D4-course/LAST.git
+git clone https://github.com/pranjali-pathre/LAST-Latent-Space-Assisted-Adpative-Sampling.git
 cd LAST
-docker build -t last .
-docker run last 1ake 3 2
+docker build -t container -f Dockerfile .
+docker run -d -p 1015:8000 container
 ```
+## Setting frontend
+```bash
+cd frontend
+pipenv shell
+pipenv install streamlit
+pip install matplotlib stmol py3Dmol numpy requests
+streamlit run app.py
+```
+
 ## To check pylint score
 ```bash
 cd LAST/LAST/
